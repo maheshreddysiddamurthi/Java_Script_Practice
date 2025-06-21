@@ -61,14 +61,24 @@
 //     console.log(xyz);
 // });
 
-function xyasss() {
-    console.log('xyasss');
+// function xyasss() {
+//     console.log('xyasss');
 
-}
-const myFun = () => {
-    console.log('My FUn');
+// }
+// const myFun = () => {
+//     console.log('My FUn');
 
-}
+// }
 
-// xyasss();
-myFun();
+// // xyasss();
+// myFun();
+
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+readline.question('Enter passcode: ', (passcode) => {
+    console.log('You entered:', passcode);
+    readline.close();
+});
