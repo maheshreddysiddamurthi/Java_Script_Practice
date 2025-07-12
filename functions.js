@@ -55,19 +55,27 @@ if (true) {
 console.log(z);
 
 //Ex6: 
-const hummus = function (factor) {
-    const ingredient = function (amount, unit, name) {
-        let ingredientAmount = amount * factor;
-        if (ingredientAmount > 1) {
-            unit += "s";
-        }
-        console.log(`${ingredientAmount} ${unit} ${name}`);
-    };
-    ingredient(1, "can", "chickpeas");
-    ingredient(0.25, "cup", "tahini");
-    ingredient(0.25, "cup", "lemon juice");
-    ingredient(1, "clove", "garlic");
-    ingredient(2, "tablespoon", "olive oil");
-    ingredient(0.5, "teaspoon", "cumin");
-};
-console.log(ingredient(1, "can", "chickpeas"));
+// const hummus = function (factor) {
+//     const ingredient = function (amount, unit, name) {
+//         let ingredientAmount = amount * factor;
+//         if (ingredientAmount > 1) {
+//             unit += "s";
+//         }
+//         console.log(`${ingredientAmount} ${unit} ${name}`);
+//     };
+//     ingredient(1, "can", "chickpeas");
+//     ingredient(0.25, "cup", "tahini");
+//     ingredient(0.25, "cup", "lemon juice");
+//     ingredient(1, "clove", "garlic");
+//     ingredient(2, "tablespoon", "olive oil");
+//     ingredient(0.5, "teaspoon", "cumin");
+// };
+// console.log(ingredient(1, "can", "chickpeas"));
+
+
+// Arrow function syntax
+// Instead of the function keyword, it uses an arrow (=>)
+const functionName2 = (parameters) => {
+    // function body
+    return value;
+}
