@@ -29,7 +29,7 @@ const makeNoise = function () {
 makeNoise();
 
 //Ex3:
-const roundTo = function (n, step) {
+const roundTo = (n, step) => {
     let remainder = n % step;
     return n - remainder + (remainder < step / 2 ? 0 : step);
 };
@@ -79,3 +79,54 @@ const functionName2 = (parameters) => {
     // function body
     return value;
 }
+
+const greet = (nnnnn) => "Hello!";
+
+console.log(greet()); // → Hello!
+
+const divide = (a, b) => {
+    if (b === 0) return "Cannot divide by zero";
+    return a / b;
+};
+console.log(divide(10, 2)); // → 5
+console.log(divide(10, 0)); // → Cannot divide by zero
+
+console.log('Print');
+
+// jdsh
+
+/**
+ * let, var, const
+ * string, number, array, boolean, object
+ */
+
+// EX:
+function getFirstName(text) {
+    const spitArr = text.trim().split(' ');
+    console.log(spitArr);
+    
+    return spitArr[0];
+}
+
+console.log(getFirstName(' Mahesh Kumar Reddy'));
+console.log(getFirstName('Krishnas Kanth'));
+
+const first = getFirstName('Krishnas Kanth');
+
+const myName = 'Mahesh Kumar Reddy';
+const myNameArr = myName.split('');
+
+let newName = '';
+for (let index = myNameArr.length - 1; index >= 0; index--) {
+    console.log(myNameArr[index]);
+    newName = newName + myNameArr[index];
+}
+
+console.log('Reverse NAme=> ', newName);
+
+
+// for (let index = 9; index > 0; index--) {
+//     console.log(index);
+    
+// }
+// spli
