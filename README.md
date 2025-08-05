@@ -8,7 +8,7 @@ Here are some great resources to learn and practice programming:
 - [HackerRank](https://www.hackerrank.com/) – Practice coding, prepare for interviews, and get hired.
 - [Exercism](https://exercism.org/) – Learn new languages and coding concepts with mentorship.
 
-###########################################################################################
+##################################################################################
 
 🧭 JavaScript Roadmap (Modern – 2025 Edition)
 ---------------------------------------------
