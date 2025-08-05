@@ -18,7 +18,10 @@ C2 = C1;
 console.log(C2.model); // → X5
 console.log(C2.cost); // → 50000
 
+// Changing a property of C2
+// This will also change C1 since both C1 and C2 refer to the same object
 C2.name = 'Mercedes';
 
+// Both C1 and C2 refer to the same object, so changing C2 affects C1
 console.log(C2.name); // → Mercedes
 console.log(C1.name); // → Mercedes
