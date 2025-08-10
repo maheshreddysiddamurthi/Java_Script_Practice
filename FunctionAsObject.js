@@ -21,6 +21,19 @@ function executeFunction(fn, arg) {
 console.log(executeFunction(sayHello, 'Alice')); // Outputs: Hello, Alice!
 
 // Returning a function from another function
+// Ex1:
+function fun1() {
+    console.log("This is fun1");
+    // Returning another function
+    function fun2() {
+        console.log("This is fun2");
+    }
+    return fun2; // Returning the function itself, not calling it
+}
+exmp = fun1(); // Outputs: This is fun1
+exmp(); // Outputs: This is fun2
+
+// Ex2:
 function createMultiplier(multiplier) {
     return function (x) {
         return x * multiplier;
@@ -81,3 +94,15 @@ function exam(fun) {
 }
 
 console.log(exam(() => 'This is an exam function!')); // Outputs: This is an exam function!
+
+
+// function fun1(a, b) {
+//     console.log("This is fun1");
+//     // Returning another function
+
+//     return a * b;
+// };
+
+// exe = fun1(1, 2); // Outputs: This is fun1
+// // console.log(exe()); // Outputs: This is fun2
+// console.log(exe); // Outputs: 2
