@@ -1,11 +1,10 @@
 //Example1:
-let arr = [a, b, c, d, e];
-console.log(arr); // Outputs: [a, b, c, d, e]
-console.log(arr[0]); // Outputs: a
-console.log(arr[1]); // Outputs: b
-console.log(arr[2]); // Outputs: c
-console.log(arr[3]); // Outputs: d
-console.log(arr[4]); // Outputs: e
+let arr = [1, 2, 3, 4, 5];
+console.log(arr); // Outputs: [1, 2, 3, 3, 5]
+console.log(arr[0]); // Outputs: 1
+console.log(arr[1]); // Outputs: 2
+console.log(arr[2]); // Outputs: 3
+
 
 // Array with predefined size
 // Note: JavaScript arrays are dynamic, so you can add or remove elements as needed.
@@ -25,3 +24,35 @@ for (let i = 0; i < arr1.length; i++) {
 for (let item of arr1) {
     console.log(item); // Outputs: a, b, c, d, e
 }
+
+// Array built in Methods
+let arr2 = [1, 2, 3, 4, 5];
+arr2.push(6); // Adds 6 to the end
+console.log(arr2); // Outputs: [1, 2, 3, 4, 5, 6]
+
+arr2.pop(); // Removes the last element
+console.log(arr2); // Outputs: [1, 2, 3, 4, 5]
+
+arr2.shift(); // Removes the first element
+console.log(arr2); // Outputs: [2, 3, 4, 5]
+
+arr2.unshift(1); // Adds 1 to the beginning
+console.log(arr2); // Outputs: [1, 2, 3, 4, 5]
+
+// Other methods
+// Note: These methods can be used to manipulate arrays in various ways.
+// Example of some common array methods:
+// arr2.splice(start, deleteCount, item1, item2, ...)
+// arr2.slice(start, end)
+//push()
+// pop()
+// shift()
+// unshift()
+// splice()
+// slice()
+// concat()
+// join()
+// indexOf()
+// lastIndexOf()
+// forEach()
+// map()
