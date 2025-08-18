@@ -28,17 +28,21 @@ for (let item of arr1) {
 // Array built in Methods
 let arr2 = [1, 2, 3, 4, 5];
 arr2.push(6); // Adds 6 to the end
-console.log(arr2); // Outputs: [1, 2, 3, 4, 5, 6]
+console.log("push:", arr2); // Outputs: [1, 2, 3, 4, 5, 6]
 
 arr2.pop(); // Removes the last element
-console.log(arr2); // Outputs: [1, 2, 3, 4, 5]
+console.log("pop:", arr2); // Outputs: [1, 2, 3, 4, 5]
 
 arr2.shift(); // Removes the first element
-console.log(arr2); // Outputs: [2, 3, 4, 5]
+console.log("shift:", arr2); // Outputs: [2, 3, 4, 5]
 
 arr2.unshift(1); // Adds 1 to the beginning
-console.log(arr2); // Outputs: [1, 2, 3, 4, 5]
+console.log("unshift:", arr2); // Outputs: [1, 2, 3, 4, 5]
 
+// splice(start index)
+// using splice we can inter/remove data anywhere in the index. we can remove and insert at same time and vise versha 
+arr2.splice(0,0,9)
+console.log("splice:", arr2)
 // Other methods
 // Note: These methods can be used to manipulate arrays in various ways.
 // Example of some common array methods:
