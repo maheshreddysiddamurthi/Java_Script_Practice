@@ -26,37 +26,24 @@ for (let item of arr1) {
 }
 
 // Array built in Methods
+// push() - Adds one or more elements to the end of an array and returns the new length of the array.
 let arr2 = [1, 2, 3, 4, 5];
 arr2.push(6); // Adds 6 to the end
 console.log("push:", arr2); // Outputs: [1, 2, 3, 4, 5, 6]
 
+// pop() - Removes the last element from an array and returns that element.
 arr2.pop(); // Removes the last element
 console.log("pop:", arr2); // Outputs: [1, 2, 3, 4, 5]
 
+// shift() - Removes the first element from an array and returns that element.
 arr2.shift(); // Removes the first element
 console.log("shift:", arr2); // Outputs: [2, 3, 4, 5]
 
+// unshift() - Adds one or more elements to the beginning of an array and returns the new length of the array.
 arr2.unshift(1); // Adds 1 to the beginning
 console.log("unshift:", arr2); // Outputs: [1, 2, 3, 4, 5]
 
-// splice(start index)
-// using splice we can inter/remove data anywhere in the index. we can remove and insert at same time and vise versha 
-arr2.splice(0,0,9)
+//splice() - Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// Syntax arr2.splice(start, deleteCount, item1, item2, ...)
+arr2.splice(0, 0, 9)
 console.log("splice:", arr2)
-// Other methods
-// Note: These methods can be used to manipulate arrays in various ways.
-// Example of some common array methods:
-// arr2.splice(start, deleteCount, item1, item2, ...)
-// arr2.slice(start, end)
-//push()
-// pop()
-// shift()
-// unshift()
-// splice()
-// slice()
-// concat()
-// join()
-// indexOf()
-// lastIndexOf()
-// forEach()
-// map()
