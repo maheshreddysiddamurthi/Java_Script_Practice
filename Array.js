@@ -47,3 +47,14 @@ console.log("unshift:", arr2); // Outputs: [1, 2, 3, 4, 5]
 // Syntax arr2.splice(start, deleteCount, item1, item2, ...)
 arr2.splice(0, 0, 9)
 console.log("splice:", arr2)
+
+
+function calculate(a, b, operation) {
+    return operation(a, b); // callback decides the operation
+}
+
+const add = (x, y) => x + y;
+const multiply = (x, y) => x * y;
+
+console.log(calculate(5, 3, add));      // 8
+console.log(calculate(5, 3, multiply)); // 15

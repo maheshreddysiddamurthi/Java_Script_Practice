@@ -26,3 +26,12 @@ console.log(add(5, 3)); // Outputs: 8
     console.log("This is an IIFE!");
 })();
 
+//5.callback function
+function greet(name, callback) {
+    console.log("Hello, " + name);
+    callback();
+}
+
+greet("Alice", function () {
+    console.log("This is a callback function!");
+});
