@@ -63,3 +63,13 @@ console.log(calculate(5, 3, multiply)); // 15
 let numbers = [1, 2, 3, 4, 5];
 let squared = numbers.map(num => num * num);
 console.log("map:", squared); // Outputs: [1, 4, 9, 16, 25]         
+
+//filter() - Creates a new array with all elements that pass the test implemented by the provided function.
+//EX1:
+let evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log("filter:", evenNumbers); // Outputs: [2, 4] 
+
+//EX2:
+let ages = [32, 33, 16, 40];
+let result = ages.filter(x => x >= 18);
+console.log("filter:", result); // Outputs: [32, 33, 40]    
