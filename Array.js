@@ -58,3 +58,8 @@ const multiply = (x, y) => x * y;
 
 console.log(calculate(5, 3, add));      // 8
 console.log(calculate(5, 3, multiply)); // 15
+
+//map() - Creates a new array populated with the results of calling a provided function on every element in the calling array.
+let numbers = [1, 2, 3, 4, 5];
+let squared = numbers.map(num => num * num);
+console.log("map:", squared); // Outputs: [1, 4, 9, 16, 25]         
