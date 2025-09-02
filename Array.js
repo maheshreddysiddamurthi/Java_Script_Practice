@@ -73,3 +73,7 @@ console.log("filter:", evenNumbers); // Outputs: [2, 4]
 let ages = [32, 33, 16, 40];
 let result = ages.filter(x => x >= 18);
 console.log("filter:", result); // Outputs: [32, 33, 40]    
+
+//reduce() - Executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log("reduce:", sum); // Outputs: 15
